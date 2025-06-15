@@ -28,7 +28,6 @@ const PLUGINS = [
       "Seamless integration with MongoDB for persistent vector storage and hybrid search capabilities.",
     icon: Database,
     status: "coming-soon",
-    eta: "Q2 2024",
     features: [
       "Persistent vector storage",
       "Hybrid text + vector search",
@@ -45,7 +44,6 @@ const PLUGINS = [
       "Pre-configured Docker container with NeuraDB server for easy deployment and scaling.",
     icon: Container,
     status: "coming-soon",
-    eta: "Q2 2024",
     features: [
       "Ready-to-deploy container",
       "REST API endpoints",
@@ -62,7 +60,6 @@ const PLUGINS = [
       "First-class Next.js integration with server components and edge runtime support.",
     icon: Layers,
     status: "in-development",
-    eta: "Q1 2024",
     features: [
       "Server Components support",
       "Edge Runtime compatible",
@@ -79,7 +76,6 @@ const PLUGINS = [
       "React hooks and components for building vector-powered UIs with real-time search.",
     icon: Atom,
     status: "in-development",
-    eta: "Q1 2024",
     features: [
       "useVectorSearch hook",
       "Real-time search components",
@@ -117,7 +113,7 @@ export function ComingSoonPlugins() {
       </div>
 
       {/* Newsletter Signup */}
-      <Card className="bg-gradient-to-r from-gray-50 to-gray-100 border-0">
+      {/* <Card className="bg-gradient-to-r from-gray-50 to-gray-100 border-0">
         <CardContent className="p-8 text-center">
           <div className="max-w-md mx-auto space-y-4">
             <div className="w-12 h-12 bg-black rounded-full flex items-center justify-center mx-auto">
@@ -138,7 +134,7 @@ export function ComingSoonPlugins() {
             </div>
           </div>
         </CardContent>
-      </Card>
+      </Card> */}
 
       {/* Plugins Grid */}
       <div className="grid md:grid-cols-2 gap-6">
@@ -174,10 +170,6 @@ export function ComingSoonPlugins() {
                               plugin.status as keyof typeof STATUS_CONFIG
                             ].label
                           }
-                        </Badge>
-                        <Badge variant="outline" className="gap-1 text-xs">
-                          <Calendar className="h-3 w-3" />
-                          {plugin.eta}
                         </Badge>
                       </div>
                     </div>
@@ -262,7 +254,7 @@ export function ComingSoonPlugins() {
       </Card> */}
 
       {/* Request Plugin */}
-      <Card className="border-dashed border-2">
+      {/* <Card className="border-dashed border-2">
         <CardContent className="p-8 text-center">
           <h3 className="text-lg font-semibold mb-2">
             Need a specific integration?
@@ -275,7 +267,7 @@ export function ComingSoonPlugins() {
             Request Plugin
           </Button>
         </CardContent>
-      </Card>
+      </Card> */}
     </div>
   );
 }
